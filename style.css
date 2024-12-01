@@ -42,3 +42,41 @@ header h1 {
     padding: 20px; /* Add padding around the content */
 }
 
+/* Box Styling for Sections */
+#zen-summary, #zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements,
+.design-selection, .design-archives, .zen-resources {
+    background-color: rgba(211, 184, 156, 0.8); /* Light tan with transparency */
+    border: 2px solid #7b4b2a; /* Dark brown border */
+    border-radius: 10px; /* Rounded corners for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth around the boxes until it is hovered over */
+    margin-bottom: 20px; /* Add spacing below each box seperating each one*/
+    padding: 20px; /* Add padding inside the box */
+}
+
+/* Section Header Styling */
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+    background-color: rgba(123, 75, 42, 0.8); /* Dark brown header background */
+    color: #f4e9d8; /* Light tan text color */
+    padding: 10px; /* Add padding inside the header */
+    border-radius: 5px; /* Rounded corners for the header */
+    text-align: center; /* Center the header text */
+    font-family: 'Cinzel Decorative', serif; /* Western-style font for the headers */
+    font-size: 1.5rem; /* Slightly larger font size */
+    margin-bottom: 15px; /* Add spacing below the header */
+}
+
+/* Styling for List Content */
+.design-selection ul, .design-archives ul, .zen-resources ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding from the list */
+    text-align: left; /* Align the list items to the left */
+}
+
+
+.design-selection ul li, .design-archives ul li, .zen-resources ul li {
+    margin-bottom: 10px; /* Add spacing between each list item */
+    font-size: 1rem; /* Set a readable font size */
+    font-family: 'Playfair Display', serif; /* Western-style font for the list items */
+}
+
+
