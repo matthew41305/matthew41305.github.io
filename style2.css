@@ -11,3 +11,42 @@ body {
 h1, h2, h3, p, a, li {
     text-shadow: 0 0 8px #00ff00, 0 0 12px #00ff00; /* Adds a glowing neon effect to text using multiple layers of green shadow. */
 }
+
+/* Overlay for readability */
+.page-wrapper {
+    background: rgba(0, 0, 0, 0.8); /* Creates a semi-transparent black background for the content wrapper to enhance readability over the image */
+    margin: 0 auto; /* Centers the wrapper horizontally */
+    padding: 20px; /* Adds padding inside the wrapper for spacing. */
+    max-width: 1200px; /* Limits the maximum width of the content for better readability on large screen */
+    border: 2px solid #00ff00; /* Adds a glowing green border around the wrapper */
+    border-radius: 8px; /* Rounds the corners of the wrapper slightly */
+    box-shadow: 0 0 10px #00ff00; /* Adds a neon green glow effect around the wrapper */
+}
+
+/* CSS Zen Garden Header */
+header {
+    background: rgba(0, 0, 0, 0.9); /* A nearly opaque black background for the header to contrast with the text */
+    color: #00ff00; /* Sets the header text color to neon green */
+    text-align: center; /* Centers the text horizontally in the header */
+    padding: 30px 0; /* Adds vertical spacing inside the heade */
+    border-bottom: 2px solid #00ff00; /* Adds a glowing green border at the bottom of the header */
+}
+
+header h1 {
+    font-size: 3rem; /* Sets a large font size for the main header. */
+    margin: 0; /* Removes default margin around the header text. */
+    text-transform: uppercase; /* Converts the header text to uppercase */
+}
+
+header h2 {
+    font-size: 1.5rem; /* Sets a smaller font size for the subtitle */
+    margin: 0; /* Removes default margin around the subtitle text */
+    opacity: 0.9; /* Slightly reduces the opacity for a softer look */
+}
+
+/* Layout */
+.page-wrapper {
+    display: flex; /* Uses Flexbox for layout within the wrapper */
+    flex-wrap: wrap; /* Allows content to wrap to the next row if there isn’t enough horizontal space */
+    gap: 20px; /* Adds space between the flex items */
+}
