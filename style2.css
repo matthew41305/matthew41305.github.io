@@ -1,0 +1,13 @@
+/* General Styling */
+body {
+    background-image: url('https://i.postimg.cc/tRMcNtfw/matrixfall.jpg');  /* Sets a background image for the body. In this case, a Matrix-themed image is used. */
+    background-size: cover; /* Ensures the background image covers the entire viewport, scaling as necessary. */
+    font-family: "Courier New", Courier, monospace; /* Sets the font to a monospace  for a hacker look. */
+    color: #00ff00; /* Sets the text color to neon green */
+    margin: 0; /* Removes default margin around the body. */
+    padding: 0; /* Removes default padding around the body. */
+}
+
+h1, h2, h3, p, a, li {
+    text-shadow: 0 0 8px #00ff00, 0 0 12px #00ff00; /* Adds a glowing neon effect to text using multiple layers of green shadow. */
+}
