@@ -117,3 +117,20 @@ nav a {
     text-align: center; /* Centers the text inside the links. */
     box-shadow: 0 0 5px #00ff00; /* Adds a glowing green effect around the links. */
 }
+
+nav a:hover {
+    background: rgba(0, 100, 0, 0.8); /* Changes the background to a brighter green when hovered over. */
+    box-shadow: 0 0 10px #00ff00; /* Increases the glow effect when hovered. */
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+    .page-wrapper {
+        flex-direction: column; /* Stacks the main content and sidebar vertically on smaller screens. */
+    }
+
+    .main, .sidebar {
+        flex: none; /* Removes the proportional space allocation for smaller screens. */
+        width: 100%; /* Ensures both the main content and sidebar take up the full width of the screen. */
+    }
+}
