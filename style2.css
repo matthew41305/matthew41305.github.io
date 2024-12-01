@@ -50,3 +50,21 @@ header h2 {
     flex-wrap: wrap; /* Allows content to wrap to the next row if there isn’t enough horizontal space */
     gap: 20px; /* Adds space between the flex items */
 }
+
+.main {
+    flex: 2; /* Allocates two parts of the available space to the main content */
+    padding: 20px; /* Adds padding inside the main content area */
+    background: rgba(0, 50, 0, 0.8); /* A dark green background with transparency for the main content area */
+    border: 2px solid #00ff00; /* Adds a green border around the main content */
+    border-radius: 8px; /* Slightly rounds the corners of the main content area */
+    box-shadow: 0 0 10px #00ff00; /* Adds a glowing green effect around the main content */
+}
+
+.sidebar {
+    flex: 1; /* Allocates one part of the available space to the sidebar */
+    padding: 20px; /* Adds padding inside the sidebar */
+    background: rgba(0, 30, 0, 0.8); /* A darker green background with transparency for the sidebar */
+    border: 2px solid #00ff00; /* Adds a green border around the sidebar */
+    border-radius: 8px; /* Slightly rounds the corners of the sidebar */
+    box-shadow: 0 0 10px #00ff00; /* Adds a glowing green effect around the sidebar */
+}
