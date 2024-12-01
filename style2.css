@@ -97,3 +97,23 @@ footer {
     background: rgba(0, 0, 0, 0.9); /* A nearly opaque black background for the footer. */
     border-top: 2px solid #00ff00; /* Adds a glowing green border at the top of the footer. */
 }
+
+/* Navigation */
+nav ul {
+    list-style: none; /* Removes default bullet points from the list. */
+    padding: 0; /* Removes default padding around the list. */
+}
+
+nav li {
+    margin-bottom: 10px; /* Adds space between list items. */
+}
+
+nav a {
+    display: block; /* Makes the link occupy the full width of its container. */
+    padding: 5px 10px; /* Adds padding inside the link for better clickability. */
+    background: rgba(0, 50, 0, 0.8); /* A dark green background with transparency for navigation links. */
+    border: 2px solid #00ff00; /* Adds a green border around navigation links. */
+    border-radius: 4px; /* Slightly rounds the corners of the links. */
+    text-align: center; /* Centers the text inside the links. */
+    box-shadow: 0 0 5px #00ff00; /* Adds a glowing green effect around the links. */
+}
