@@ -7,6 +7,7 @@ body, h1, h2, h3, p, ul, li, a {
     box-sizing: border-box;
 }
 
+
 /* Body and Background */
 body {
     background-image: url('https://i.postimg.cc/8zsG3Lq2/westernback.jpg'); /* Set the Western-themed background image; had to source on postimg*/
@@ -18,6 +19,7 @@ body {
     font-family: 'Playfair Display', serif; /* Western-style font for the page */
 }
 
+
 /* Main Header Styling */
 header {
     text-align: center; /* Center the header content */
@@ -28,6 +30,7 @@ header {
     font-family: 'Cinzel Decorative', serif; /* Western-style font for the header */
 }
 
+
 header h1 {
     font-size: 3rem; /* Large font size for the header */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for emphasis */
@@ -35,12 +38,14 @@ header h1 {
     margin: 0;
 }
 
+
 /* Page Wrapper Styling */
 .page-wrapper {
     max-width: 1200px; /* Limit the maximum width of the content */
     margin: 20px auto; /* Center the content horizontally with top/bottom spacing */
     padding: 20px; /* Add padding around the content */
 }
+
 
 /* Box Styling for Sections */
 #zen-summary, #zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements,
@@ -52,6 +57,7 @@ header h1 {
     margin-bottom: 20px; /* Add spacing below each box seperating each one*/
     padding: 20px; /* Add padding inside the box */
 }
+
 
 /* Section Header Styling */
 .design-selection h3, .design-archives h3, .zen-resources h3 {
@@ -65,6 +71,7 @@ header h1 {
     margin-bottom: 15px; /* Add spacing below the header */
 }
 
+
 /* Styling for List Content */
 .design-selection ul, .design-archives ul, .zen-resources ul {
     list-style: none; /* Remove bullet points from the list */
@@ -73,10 +80,24 @@ header h1 {
 }
 
 
+
+
 .design-selection ul li, .design-archives ul li, .zen-resources ul li {
     margin-bottom: 10px; /* Add spacing between each list item */
     font-size: 1rem; /* Set a readable font size */
     font-family: 'Playfair Display', serif; /* Western-style font for the list items */
+}
+
+.design-selection ul li a, .design-archives ul li a, .zen-resources ul li a {
+    color: #4b2e15; /* Use dark brown text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Playfair Display', serif; /* Western-style font */
+}
+
+
+.design-selection ul li a:hover, .design-archives ul li a:hover, .zen-resources ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #7b4b2a; /* Darker brown color for hover effect */
 }
 
 
