@@ -68,3 +68,32 @@ header h2 {
     border-radius: 8px; /* Slightly rounds the corners of the sidebar */
     box-shadow: 0 0 10px #00ff00; /* Adds a glowing green effect around the sidebar */
 }
+
+/* Section Headings */
+h3 {
+    border-bottom: 2px solid #00ff00; /* Adds a glowing green underline to section headings. */
+    padding-bottom: 5px; /* Adds space below the heading text and the border. */
+    margin-bottom: 15px; /* Adds space between the heading and subsequent content. */
+}
+
+/* Links */
+a {
+    color: #00ff00; /* Sets the link color to neon green. */
+    text-decoration: none; /* Removes the default underline from links. */
+    font-weight: bold; /* Makes the link text bold for emphasis. */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds an underline when the link is hovered over. */
+    color: #00cc00; /* Changes the link color to a slightly darker green when hovered. */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Centers the text in the footer. */
+    padding: 10px; /* Adds padding inside the footer for spacing. */
+    font-size: 0.8rem; /* Sets a smaller font size for the footer text. */
+    color: #00ff00; /* Sets the footer text color to neon green. */
+    background: rgba(0, 0, 0, 0.9); /* A nearly opaque black background for the footer. */
+    border-top: 2px solid #00ff00; /* Adds a glowing green border at the top of the footer. */
+}
