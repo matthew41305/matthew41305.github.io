@@ -1,0 +1,44 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    background-image: url('https://i.postimg.cc/8zsG3Lq2/westernback.jpg'); /* Set the Western-themed background image; had to source on postimg*/
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    color: #4b2e15; /* Dark brown text for readability */
+    font-family: 'Playfair Display', serif; /* Western-style font for the page */
+}
+
+/* Main Header Styling */
+header {
+    text-align: center; /* Center the header content */
+    background-color: rgba(123, 75, 42, 0.8); /* Dark brown background with transparency */
+    color: #f4e9d8; /* Light tan text color */
+    padding: 20px; /* Add space around the header content */
+    border-bottom: 5px solid #7b4b2a; /* Add a thick border below the header */
+    font-family: 'Cinzel Decorative', serif; /* Western-style font for the header */
+}
+
+header h1 {
+    font-size: 3rem; /* Large font size for the header */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for emphasis */
+    letter-spacing: 5px; /* Add letter spacing for a bold Western feel */
+    margin: 0;
+}
+
+/* Page Wrapper Styling */
+.page-wrapper {
+    max-width: 1200px; /* Limit the maximum width of the content */
+    margin: 20px auto; /* Center the content horizontally with top/bottom spacing */
+    padding: 20px; /* Add padding around the content */
+}
+
