@@ -100,4 +100,46 @@ header h1 {
     color: #7b4b2a; /* Darker brown color for hover effect */
 }
 
+/* Footer Styling */
+footer {
+    text-align: center; /* Center the footer content */
+    background-color: rgba(211, 184, 156, 0.8); /* Semi-transparent tan background */
+    border-top: 2px solid #7b4b2a; /* Add a dark brown border above the footer */
+    color: #4b2e15; /* Dark brown text color */
+    padding: 20px; /* Add padding inside the footer */
+    font-family: 'Playfair Display', serif; /* Use the same font for consistency */
+}
+
+
+/* Link Styling */
+a {
+    color: #e97120; /* Use orange for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+a:hover {
+    color: #4b2e15; /* Change link color to dark brown on hover */
+    text-decoration: underline; /* Add underline on hover for emphasis */
+}
+
+
+/* Hover Effect for Boxes */
+.design-selection:hover, .design-archives:hover, .zen-resources:hover {
+    box-shadow: 0 0 15px rgba(123, 75, 42, 0.8); /* Add a glowing effect on hover */
+}
+
+
+/* Responsive Design for all devices, styles in this vlock will only apply if the viewport is 768 px or less */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Reduce header font size on smaller screens */
+    }
+
+
+    .page-wrapper {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
 
