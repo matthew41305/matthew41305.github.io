@@ -7,18 +7,20 @@ body, h1, h2, h3, p, ul, li, a {
     box-sizing: border-box;
 }
 
-
 /* Body and Background */
 body {
-    background-image: url('https://i.postimg.cc/8zsG3Lq2/westernback.jpg'); /* Set the Western-themed background image; had to source on postimg*/
+    background-image: url('https://i.postimg.cc/8zsG3Lq2/westernback.jpg'); /* Set the Western-themed background image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the background */
     background-attachment: fixed; /* Keep the background fixed while scrolling */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     color: #4b2e15; /* Dark brown text for readability */
     font-family: 'Playfair Display', serif; /* Western-style font for the page */
+    display: grid; /* Use grid for the layout */
+    grid-template-rows: auto 1fr auto; /* Header, main content, and footer */
+    grid-template-columns: 1fr; /* Single column layout */
+    min-height: 100vh; /* Ensure full height of the viewport */
 }
-
 
 /* Main Header Styling */
 header {
@@ -30,7 +32,6 @@ header {
     font-family: 'Cinzel Decorative', serif; /* Western-style font for the header */
 }
 
-
 header h1 {
     font-size: 3rem; /* Large font size for the header */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for emphasis */
@@ -38,26 +39,48 @@ header h1 {
     margin: 0;
 }
 
-
-/* Page Wrapper Styling */
+/* Grid Layout for Main Content */
 .page-wrapper {
-    max-width: 1200px; /* Limit the maximum width of the content */
+    display: grid; /* Enable grid layout for the content area */
+    grid-template-columns: 1fr 2fr 1fr; /* Left sidebar, main content, right sidebar */
+    gap: 20px; /* Add spacing between grid items */
+    max-width: 1500px; /* Limit the maximum width of the content */
     margin: 20px auto; /* Center the content horizontally with top/bottom spacing */
     padding: 20px; /* Add padding around the content */
 }
 
-
 /* Box Styling for Sections */
-#zen-summary, #zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements,
-.design-selection, .design-archives, .zen-resources {
+#zen-summary, #zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements {
     background-color: rgba(211, 184, 156, 0.8); /* Light tan with transparency */
     border: 2px solid #7b4b2a; /* Dark brown border */
     border-radius: 10px; /* Rounded corners for the boxes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth around the boxes until it is hovered over */
-    margin-bottom: 20px; /* Add spacing below each box seperating each one*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth around the boxes */
     padding: 20px; /* Add padding inside the box */
+    grid-column: 2; /* Place in the middle column */
+    margin-bottom: 20px; /* Add spacing below each box */
 }
 
+/* Left Sidebar Styling */
+#zen-resources {
+    background-color: rgba(211, 184, 156, 0.8); /* Light tan with transparency */
+    border: 2px solid #7b4b2a; /* Dark brown border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    padding: 20px; /* Add padding inside */
+    grid-column: 1; /* Place in the left column */
+    margin-top: 0; /* Remove margin above */
+}
+
+/* Right Sidebar Styling */
+.sidebar {
+    background-color: rgba(211, 184, 156, 0.8); /* Light tan with transparency */
+    border: 2px solid #7b4b2a; /* Dark brown border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    padding: 20px; /* Add padding inside */
+    grid-column: 3; /* Place in the right column */
+    margin-top: 0; /* Remove margin above */
+}
 
 /* Section Header Styling */
 .design-selection h3, .design-archives h3, .zen-resources h3 {
@@ -71,16 +94,12 @@ header h1 {
     margin-bottom: 15px; /* Add spacing below the header */
 }
 
-
 /* Styling for List Content */
 .design-selection ul, .design-archives ul, .zen-resources ul {
     list-style: none; /* Remove bullet points from the list */
     padding: 0; /* Remove padding from the list */
     text-align: left; /* Align the list items to the left */
 }
-
-
-
 
 .design-selection ul li, .design-archives ul li, .zen-resources ul li {
     margin-bottom: 10px; /* Add spacing between each list item */
@@ -93,7 +112,6 @@ header h1 {
     text-decoration: none; /* Remove underline from links */
     font-family: 'Playfair Display', serif; /* Western-style font */
 }
-
 
 .design-selection ul li a:hover, .design-archives ul li a:hover, .zen-resources ul li a:hover {
     text-decoration: underline; /* Add underline on hover */
@@ -110,7 +128,6 @@ footer {
     font-family: 'Playfair Display', serif; /* Use the same font for consistency */
 }
 
-
 /* Link Styling */
 a {
     color: #e97120; /* Use orange for links */
@@ -123,23 +140,23 @@ a:hover {
     text-decoration: underline; /* Add underline on hover for emphasis */
 }
 
-
 /* Hover Effect for Boxes */
 .design-selection:hover, .design-archives:hover, .zen-resources:hover {
     box-shadow: 0 0 15px rgba(123, 75, 42, 0.8); /* Add a glowing effect on hover */
 }
 
-
-/* Responsive Design for all devices, styles in this vlock will only apply if the viewport is 768 px or less */
+/* Responsive Design */
 @media (max-width: 768px) {
+    .page-wrapper {
+        grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+        gap: 10px; /* Reduce gap between grid items */
+    }
+
+    #zen-resources, .sidebar {
+        grid-column: 1; /* Stack sidebars on top of the main content */
+    }
+
     header h1 {
         font-size: 2rem; /* Reduce header font size on smaller screens */
     }
-
-
-    .page-wrapper {
-        padding: 10px; /* Reduce padding for smaller screens */
-    }
 }
-
-
